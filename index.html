@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity Ring</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg class="ring" viewBox="0 0 200 200" fill="none">
+        <defs>
+          <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#05a" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="#0a5" stop-opacity="1.0" />
+          </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="80" stroke-width="20px" />
+        <circle
+          stroke="url(#linear)"
+          id="progress-ring"
+          cx="100"
+          cy="100"
+          r="80"
+          stroke-width="20px"
+        />
+      </svg>
+    </div>
+  </body>
+</html>

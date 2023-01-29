@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: #100f10;
+}
+
+.wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+svg {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  fill: none;
+  transform: rotate(-90deg);
+}
+
+circle {
+  stroke-width: 20;
+}
+
+.ring:first-child {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+.ring :not(:first-child) {
+  stroke-linecap: round;
+}
